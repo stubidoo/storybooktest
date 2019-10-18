@@ -12,7 +12,7 @@ const Wrapper = styled.button({
 - In code comment JS-DOC 
 - The user's name should always be present when using Avatar – either printed beside the avatar or in a tooltip.
 **/
-const Button = ({text}) => (
+export const Button = ({text}) => (
   <Wrapper>{text}</Wrapper>
 )
 
@@ -20,6 +20,3 @@ Button.propTypes = {
   /** Button text */
   text: PropTypes.string.isRequired,
 }
-
-
-export default Button
