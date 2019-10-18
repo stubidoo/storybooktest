@@ -48,6 +48,9 @@
   },
   "description": "testing horizon lib structure",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "repository": "git@github.com:stubidoo/storybooktest.git",
   "author": "Stuart Glass <stuartglass@WKS64231.Emap-intl.net>",
   "license": "MIT"
