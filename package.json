@@ -1,6 +1,6 @@
 {
   "name": "horizon-test-storybook",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "private": false,
   "dependencies": {
     "@emotion/core": "^10.0.21",
