@@ -38,6 +38,6 @@ Build a static version of story book in `storybook-static`
 
 ### Gatsby Example:  
 
-<img width='400' src='example.png'>
+<img width='400' src='https://raw.githubusercontent.com/stubidoo/storybooktest/master/example.png?token=AB3X5RXBWLDUZ37NIT34VMK5VG2V4'>
 
 ## That's All Folks!
