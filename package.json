@@ -1,17 +1,25 @@
 {
-  "name": "horizon",
+  "name": "horizon-test-storybook",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
+    "@emotion/core": "^10.0.21",
+    "@emotion/styled": "^10.0.17",
+    "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +35,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@storybook/addon-actions": "^5.2.4",
+    "@storybook/addon-docs": "^5.2.4",
+    "@storybook/addon-links": "^5.2.4",
+    "@storybook/addons": "^5.2.4",
+    "@storybook/react": "^5.2.4",
+    "auto": "^7.9.2",
+    "babel-loader": "^8.0.6"
+  },
+  "description": "testing horizon lib structure",
+  "main": "dist/index.js",
+  "repository": "git@github.com:stubidoo/storybooktest.git",
+  "author": "Stuart Glass <stuartglass@WKS64231.Emap-intl.net>",
+  "license": "MIT"
 }
